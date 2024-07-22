@@ -1,12 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-/* 
+.semaforo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.luz1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  background-color: red;
+  cursor: pointer;
+}
 
-*/
+.luz2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.luz3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  background-color: green;
+  cursor: pointer;
+}
+
+.luz1.encendida {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.luz2.encendida {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.luz3.encendida {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.luzRoja.encendida {
+  background-color: red;
+}
+
+.luzAmarilla.encendida {
+  background-color: yellow;
+}
+
+.luzVerde.encendida {
+  background-color: green;
+}
